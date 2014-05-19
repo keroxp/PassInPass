@@ -15,6 +15,12 @@
   <h2>input</h2>
   <form id="form_id" action="index.html" method="post">
     <div id="name">
+      <select name="type" id="type">
+        <option value="1">Random Words Wrap(Based on Character Type and Password Length)</option>
+        <option value="2">Similar Words Wrap(Based on Levenshtein Distance)</option>
+      </select>
+    </div>
+    <div id="name">
       <label for="strength">Strength</label>
       <input id="strength" name="strength" type="range" step="10"/>
     </div>
