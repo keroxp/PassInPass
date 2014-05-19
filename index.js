@@ -97,7 +97,7 @@
       var self = this;
       var ret = [pass];
       for (var i = 0 , max = 10 + this.calcStrength(strength); i < max; ++i){
-        ret.push(this.levstr(this.addSalt(pass, this.rand(3)), this.rand(10)));
+        ret.push(this.levstr(this.addSalt(pass, this.rand(3)), 5 + this.rand(5)));
       }
       var out = _.shuffle(ret).join("");
       return out;
